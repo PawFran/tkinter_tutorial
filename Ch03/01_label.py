@@ -19,11 +19,11 @@ label.config(text = 'Howdy, Tkinter!')
 
 logo = PhotoImage(file = 'python_logo.gif') # change path to image as necessary
 label.config(image = logo)
-label.config(compound = 'text')
-label.config(compound = 'center')
+label.config(compound = 'text') # this will display only text
+label.config(compound = 'center') # this wil display both
 label.config(compound = 'left')
 
-label.img = logo
+label.img = logo # this prevents image object from being garbage collected
 label.config(image = label.img)
 
 root.mainloop()

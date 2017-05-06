@@ -23,7 +23,7 @@ print(button.instate(['!disabled']))
 
 logo = PhotoImage(file = 'python_logo.gif') # change path to image as necessary
 button.config(image = logo, compound = LEFT)
-small_logo = logo.subsample(5, 5)
+small_logo = logo.subsample(5, 5) # change resolution by taking each fith pixel in both directions
 button.config(image = small_logo)
 
 root.mainloop()
