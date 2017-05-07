@@ -10,7 +10,7 @@ root = Tk()
 checkbutton = ttk.Checkbutton(root, text = 'SPAM?')
 checkbutton.pack()
 
-spam = StringVar()
+spam = StringVar() # this is one of the wrappers which can be connected to a button and track changes
 spam.set('SPAM!')
 print(spam.get())
 
@@ -29,6 +29,6 @@ ttk.Radiobutton(root, text = 'SPAM', variable = breakfast,
 		value = 'SPAM').pack()
 print(breakfast.get()) # Note: value will be empty if no selection is made
 
-checkbutton.config(textvariable = breakfast)
+checkbutton.config(textvariable = breakfast) # now the text on this button will be changed accordingly to the value of a breakfast
 
 root.mainloop()
